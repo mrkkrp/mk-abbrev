@@ -1,6 +1,7 @@
 # MK Abbrev
 
 [![License GPL 3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.txt)
+[![Build Status](https://travis-ci.org/mrkkrp/mk-abbrev.svg?branch=master)](https://travis-ci.org/mrkkrp/mk-abbrev)
 
 There are quite a few characters that don't belong to any particular
 keyboard layout or language. To input them I use Emacs abbreviations.
