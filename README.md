@@ -127,26 +127,7 @@ Put it on your load path, then do `(require 'mk-abbrev)`.
 
 This is probably not a good package for MELPA, so it's not there. However, I
 prefer keep it as a separate repository and it's not going to be under
-intensive development I guess, so you can just download or clone it, as well
-as let Emacs do it for you (if you're using
-[Magit](https://github.com/magit/magit)):
-
-```emacs-lisp
-(defvar package-selected-git-packages
-  '((mk-abbrev . "https://github.com/mrkkrp/mk-abbrev.git"))
-  "Alist of packages that are installed from git repositories.")
-
-(defun package-install-git (address)
-  "Install package directly from git repository at ADDRESS.
-This functionality requires git installed."
-  (let ((temp-dir (make-temp-file "emacs-package-" t)))
-    (magit-clone address temp-dir)
-    (package-install-file temp-dir)))
-
-(dolist (package package-selected-git-packages)
-  (unless (package-installed-p (car package))
-    (package-install-git (cdr package))))
-```
+intensive development I guess, so you can just download or clone it.
 
 ## Usage
 
